@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        section {
+            padding: 60px 0;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar a {
+            color: white;
+        }
+        .card {
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="text-center bg-light" data-aos="fade-up">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Full Stack Developer</p>
+            <img src="https://via.placeholder.com/300" class="img-fluid" alt="Profile Picture">
+        </div>
+    </section>
+
+    <section id="about" class="text-center bg-dark text-white" data-aos="fade-up">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a full-stack developer with a passion for creating dynamic and responsive web applications. With expertise in both front-end and back-end technologies, I bring a comprehensive approach to web development, ensuring seamless integration and optimal performance.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Front-End Development</h5>
+                            <p class="card-text">HTML, CSS, JavaScript, Angular, React</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Back-End Development</h5>
+                            <p class="card-text">Node.js, Express, PHP, Python</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Databases</h5>
+                            <p class="card-text">MySQL, MongoDB, PostgreSQL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-dark text-white" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-light text-dark">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Description of project 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-light text-dark">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Description of project 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-light text-dark">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Description of project 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center">Experience</h2>
+            <p class="text-center">I have worked on various projects across different domains, including e-commerce, healthcare, and finance. With a strong foundation in software engineering principles, I have successfully delivered numerous projects from conception to deployment.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-dark text-white" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Handle form submission
+        $('#contactForm').on('submit', function(event) {
+            event.preventDefault();
+            const name = $('#name').val();
+            const email = $('#email').val();
+            const message = $('#message').val();
+
+            window.location.href = `mailto:gegeeealinasra@gmail.com?subject=Contact from ${name}&body=${message}`;
+        });
+    </script>
+</body>
+</html>
